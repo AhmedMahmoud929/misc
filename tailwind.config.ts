@@ -165,7 +165,7 @@ const config: Config = {
         custom: "20px",
       },
       container: {
-        center: "true",
+        center: true,
         padding: "2rem",
         screens: {
           sm: "640px",
