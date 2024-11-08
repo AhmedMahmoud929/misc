@@ -51,7 +51,13 @@ function HeroSecModel() {
   );
 }
 
-const AnimatedIcon = ({ position, icon }) => (
+const AnimatedIcon = ({
+  position,
+  icon,
+}: {
+  position: string;
+  icon: React.ReactNode;
+}) => (
   <div
     className={cn(
       "absolute -right-3 top-[60%] bg-midBlue h-14 w-14 flex justify-center items-center rounded-full animate-spin-slow shadow-blue",

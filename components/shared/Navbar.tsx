@@ -8,7 +8,6 @@ import Image from "next/image";
 import { navLinks } from "@/constants/index";
 import { Button } from "@/components/ui/button";
 import NavDropdownButton from "@/components/NavDropdownButton";
-import { fadeInUp } from "@/lib/framer-motion-variants";
 import { motion } from "framer-motion";
 
 export default function Navbar() {
