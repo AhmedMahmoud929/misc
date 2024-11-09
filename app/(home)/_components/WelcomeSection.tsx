@@ -17,7 +17,7 @@ export default function WelcomeSection() {
   };
 
   return (
-    <section className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto py-12 sm:py-16 md:py-20 lg:py-24">
+    <section className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto py-12 sm:py-16 md:py-20 lg:py-24 overflow-x-hidden">
       <div className="grid items-center gap-8 lg:grid-cols-2">
         <div className="space-y-6">
           <motion.div

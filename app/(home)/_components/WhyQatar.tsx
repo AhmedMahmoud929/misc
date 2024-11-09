@@ -18,7 +18,7 @@ export default function WhyQatar() {
   };
 
   return (
-    <section className="custome-cont px-4 py-20 ">
+    <section className="custome-cont overflow-x-hidden px-4 py-20 ">
       <div className="grid items-center gap-2 lg:grid-cols-2">
         <motion.div
           variants={slideLeft}

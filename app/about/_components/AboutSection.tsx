@@ -12,7 +12,7 @@ import React from "react";
 
 function AboutSection() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-babyBlue/50 via-white to-white">
+    <section className="relative overflow-x-hidden bg-gradient-to-b from-babyBlue/50 via-white to-white">
       <motion.div
         initial="initial"
         whileInView="animate"
