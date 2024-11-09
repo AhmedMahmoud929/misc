@@ -312,7 +312,7 @@ export const coreServicesData = [
   },
 ];
 
-export const partners = [
+export const partnersData = [
   {
     name: "Ultra Healthcare",
     logo: "/icons/ultraLogo.svg",
@@ -332,5 +332,33 @@ export const partners = [
   {
     name: "Healthcare Plus",
     logo: "/icons/healthcarePlusLogo.svg",
+  },
+];
+
+export const brandValuesData = [
+  {
+    title: "Compassion",
+    description:
+      "We prioritize the well-being and comfort of our patients, treating each individual with empathy and understanding.",
+  },
+  {
+    title: "Integrity",
+    description:
+      "Honesty and transparency are fundamental to our relationships with patients, partners, and staff. We adhere to the highest ethical standards in all our dealings.",
+  },
+  {
+    title: "Excellence",
+    description:
+      "We strive for perfection in every service we provide, continually seeking to exceed expectations through innovation and attention to detail.",
+  },
+  {
+    title: "Collaboration",
+    description:
+      "Recognizing that healthcare is a collective effort, we foster strong partnerships with medical professionals, facilities, and other stakeholders to deliver the best outcomes.",
+  },
+  {
+    title: "Cultural Sensitivity",
+    description:
+      "We respect the diverse backgrounds of our patients, ensuring that services are tailored to meet cultural, religious, and personal preferences.",
   },
 ];

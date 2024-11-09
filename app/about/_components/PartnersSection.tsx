@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { slideInFromBottom, slideInFromTop } from "@/lib/animationVariants";
 import { motion } from "framer-motion";
-import { partners } from "@/constants";
+import { partnersData } from "@/constants";
 
 export default function PartnerSection() {
   return (
@@ -28,7 +28,7 @@ export default function PartnerSection() {
           custom={0.2}
           className="grid grid-cols-2 gap-8 md:grid-cols-3 lg:hidden"
         >
-          {partners.map((partner, index) => (
+          {partnersData.map((partner, index) => (
             <div key={index} className="flex items-center justify-center p-4">
               <Image
                 src={partner.logo}
@@ -49,7 +49,7 @@ export default function PartnerSection() {
         >
           <div className="inline-flex animate-scroll">
             {/* First set of logos */}
-            {partners.map((partner, index) => (
+            {partnersData.map((partner, index) => (
               <div key={`first-${index}`} className="mx-12 flex">
                 <Image
                   src={partner.logo}
@@ -61,7 +61,7 @@ export default function PartnerSection() {
               </div>
             ))}
             {/* Duplicate set for seamless loop */}
-            {partners.map((partner, index) => (
+            {partnersData.map((partner, index) => (
               <div key={`second-${index}`} className="mx-12 flex">
                 <Image
                   src={partner.logo}

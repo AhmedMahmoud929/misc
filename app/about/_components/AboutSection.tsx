@@ -16,24 +16,24 @@ function AboutSection() {
       <motion.div
         initial="initial"
         whileInView="animate"
-        className="relative custome-cont pt-48 pb-20 sm:px-6 lg:px-8"
+        className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-40 sm:pt-48 pb-12 sm:pb-16 md:pb-20"
       >
-        <motion.div className="text-center mb-12" variants={fadeIn}>
-          <UnderlinedTitle spotlight="About Us" longVector />
+        <motion.div className="text-center mb-8 sm:mb-12" variants={fadeIn}>
+          <UnderlinedTitle spotlight="About Us" longVector size="h1" />
         </motion.div>
 
-        <div className="grid gap-4 lg:grid-cols-2 lg:gap-4 items-center">
-          <div className="-mb-20">
-            <div className="space-y-2">
+        <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 items-start">
+          <div className="space-y-8">
+            <div className="space-y-4">
               <motion.h2
                 variants={slideInFromLeft}
                 custom={0.2}
-                className="text-3xl  font-bold tracking-tight text-gray-900 sm:text-4xl"
+                className="text-2xl sm:text-3xl font-bold tracking-tight text-gray-900"
               >
                 Our Mission
               </motion.h2>
               <motion.p
-                className="text-lg text-gray-600"
+                className="text-base sm:text-lg text-gray-600"
                 variants={slideInFromLeft}
                 custom={0.4}
               >
@@ -44,18 +44,18 @@ function AboutSection() {
               </motion.p>
             </div>
 
-            <div className="space-y-2 mt-12 mb-6">
+            <div className="space-y-4">
               <motion.h2
                 variants={slideInFromLeft}
                 custom={0.6}
-                className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl"
+                className="text-xl sm:text-2xl font-bold tracking-tight text-gray-900"
               >
                 Our Vision
               </motion.h2>
               <motion.p
                 variants={slideInFromLeft}
                 custom={0.8}
-                className="text-lg text-gray-600"
+                className="text-base sm:text-lg text-gray-600"
               >
                 To become the leading global hub for personalized and accessible
                 healthcare solutions, bridging patients and world-class medical
@@ -64,8 +64,8 @@ function AboutSection() {
             </div>
             <motion.p
               variants={slideInFromLeft}
-              custom={0.6}
-              className="text-lg text-gray-600"
+              custom={1}
+              className="text-base sm:text-lg text-gray-600"
             >
               MISC Health Connect is a premier medical tourism facilitator based
               in Qatar, dedicated to connecting international patients with the
@@ -80,9 +80,9 @@ function AboutSection() {
           <motion.div
             variants={slideInFromRight}
             custom={0.3}
-            className="lg:ml-auto"
+            className="lg:ml-auto mt-8 lg:mt-0"
           >
-            <div className="relative aspect-[3/4] w-full overflow-hidden rounded-2xl">
+            <div className="relative aspect-[3/4] w-full max-w-md mx-auto lg:max-w-none overflow-hidden rounded-2xl">
               <Image
                 src="/images/aboutPic.png"
                 alt="Medical professional performing a procedure"
