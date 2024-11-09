@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 import React from "react";
 
 interface UnderlinedTitleProps {
@@ -6,7 +7,7 @@ interface UnderlinedTitleProps {
   spotlight: string;
   after?: string;
   specialPosition?: string;
-  size?: string;
+  size?: "h1" | "h2" | "h3";
   longVector?: boolean;
 }
 
@@ -18,29 +19,36 @@ function UnderlinedTitle({
   size = "h1",
   longVector = false,
 }: UnderlinedTitleProps) {
+  const Tag = size;
+
   return (
-    <h1
+    <Tag
       className={cn(
-        "mb-4",
-        size === "h1" && "text-h1 font-bold ",
-        size === "h2" &&
-          "text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl"
+        "mb-4 font-bold tracking-tight",
+        size === "h1" && "text-5xl lg:text-6xl",
+        size === "h2" && "text-4xl lg:text-5xl",
+        size === "h3" && "text-3xl lg:text-4xl"
       )}
     >
       {before && before + " "}
-      <span className="relative">
-        <img
-          src={longVector ? "/icons/Vector-long.svg" : "/icons/Vector-short.svg"}
+      <span className="relative inline-block">
+        <Image
+          src={
+            longVector ? "/icons/Vector-long.svg" : "/icons/Vector-short.svg"
+          }
+          width={longVector ? 200 : 100}
+          height={20}
           className={cn(
             "absolute w-full",
             specialPosition ? specialPosition : "bottom-0 right-0"
           )}
-          alt="vector line"
+          alt=""
+          aria-hidden="true"
         />
         <span className="relative">{spotlight}</span>
       </span>
       {after && " " + after}
-    </h1>
+    </Tag>
   );
 }
 

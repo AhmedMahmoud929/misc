@@ -18,7 +18,7 @@ export default function WhyQatar() {
   };
 
   return (
-    <section className="sm:px-4 max-w-7xl mx-auto py-20 ">
+    <section className="custome-cont px-4 py-20 ">
       <div className="grid items-center gap-2 lg:grid-cols-2">
         <motion.div
           variants={slideLeft}
@@ -68,23 +68,23 @@ export default function WhyQatar() {
         </motion.div>
 
         <motion.div
-          className="relative h-full min-h-[400px] -mb-20"
+          className="relative h-[300px] sm:h-[350px] md:h-[400px] lg:h-[450px] lg:-mb-24 -mb-16  lg:mr-8"
           variants={slideRight}
           initial="hidden"
           whileInView="visible"
-          transition={{ delay: 0.4, duration: 0.6 }}
+          transition={{ duration: 0.4, delay: 0.6 }}
         >
           <Image
             alt="Patients in waiting room"
             src="/images/ImgBackGrad.svg"
-            className="absolute right-12 top-0"
+            className="hidden sm:block absolute right-12 top-0"
             width={413}
             height={362}
           />
           <Image
             alt="Patients in waiting room"
             src="/images/QaterOrg.png"
-            className="absolute right-20 top-8"
+            className="sm:absolute right-20 top-8"
             width={413}
             height={362}
           />

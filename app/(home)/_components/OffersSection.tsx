@@ -75,7 +75,7 @@ export default function OffersSection() {
           {specialties.map((specialty, index) => (
             <motion.div
               key={index}
-              className="overflow-hidden flex flex-col bg-babyBlue rounded-lg w-[300px] h-[400px] p-4 transition-colors"
+              className="overflow-hidden flex flex-col bg-babyBlue rounded-lg w-full md:w-[300px] h-[400px] p-4 transition-colors"
               variants={slideUp}
               initial="hidden"
               whileInView="visible"

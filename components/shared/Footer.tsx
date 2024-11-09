@@ -29,16 +29,19 @@ function Footer() {
             Join our mailing list to stay in the loop with our newest feature
             releases, drops, promos, and updates.
           </p>
-          <div className="flex items-center pl-4 px-2 gap-2 rounded-full bg-white/50">
+          <form className="flex flex-col md:flex-row items-center pl-4 px-2 gap-2 rounded-full md:bg-white/50">
             <input
-              className="h-16 flex-1 text-lg rounded-full px-6 outline-0 border-0"
+              className="min-h-16 flex-1 text-lg rounded-md md:rounded-full px-6 outline-0 w-full md:w-fit border-0"
               placeholder="Your Email..."
               type="email"
             />
-            <Button variant={"mainBlue"} className="h-12 rounded-full px-8">
+            <Button
+              variant={"mainBlue"}
+              className="h-12 rounded-md w-full md:w-fit md:rounded-full px-8"
+            >
               I&apos;m In
             </Button>
-          </div>
+          </form>
         </div>
 
         <div className="flex flex-col mt-32 mb-6 items-center justify-between gap-8 md:flex-row">

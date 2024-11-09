@@ -14,9 +14,9 @@ export default function WhySection() {
   return (
     <section className="w-full bg-babyBlue rounded-sm py-12 md:py-16 lg:py-20">
       <div className="sm:px-4 max-w-7xl mx-auto">
-        <div className="container flex flex-col gap-12 lg:flex-row lg:gap-24 items-center px-4 md:px-6">
+        <div className="container flex flex-col gap-12 lg:flex-row lg:gap-20 items-center px-4 md:px-6">
           <motion.div
-            className="relative w-[60%] h-[500px]"
+            className="relative aspect-[2.5/3] h-[300px] sm:h-[400px] md:h-[500px]"
             variants={slideLeft}
             initial="hidden"
             whileInView="visible"

@@ -31,10 +31,10 @@ export default function Navbar() {
         isSticky
           ? "fixed top-0 w-full backdrop-blur-sm "
           : "top-8 w-[88%] rounded-xl",
-        isMobileMenuOpen ? "h-screen" : "h-[90px]"
+        isMobileMenuOpen ? "h-screen" : "h-[65px] md:h-[90px]"
       )}
     >
-      <div className="flex w-full items-center gap-2">
+      <div className="flex w-full items-center justify-between gap-2">
         {/* ====== LOGO ====== */}
         <Link href="/" className="relative h-16 w-16 md:h-20 md:w-20">
           <Image src="/icons/Misc logo.svg" alt="Mist" fill />
@@ -43,18 +43,18 @@ export default function Navbar() {
         {/* ====== MOBILE MENU TOGGLE ====== */}
         <button
           className="z-50 md:hidden"
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          // onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? (
             <X className="h-6 w-6" />
           ) : (
-            <Menu className="h-6 w-6" />
+            <Menu className="h-8 w-8 mr-2" />
           )}
         </button>
 
         {/* ====== DESKTOP MENU ====== */}
         {/* ====== LINKS ====== */}
-        <ul className="mr-8 flex flex-grow items-center justify-center gap-8">
+        <ul className="mr-8 hidden md:flex flex-grow items-center justify-center gap-8">
           {navLinks.map(({ title, href }, ix) => (
             <li key={ix}>
               <Link href={href}>{title}</Link>
@@ -63,7 +63,7 @@ export default function Navbar() {
         </ul>
 
         {/* ====== ACTIONS ====== */}
-        <div className="flex items-center gap-4">
+        <div className="hidden md:flex items-center gap-4">
           <Button variant="mainBlue" size="custome">
             Video consult
           </Button>
